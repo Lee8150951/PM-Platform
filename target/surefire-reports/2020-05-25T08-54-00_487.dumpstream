@@ -1,0 +1,15 @@
+# Created at 2020-05-25T08:54:01.820
+WARNING: An illegal reflective access operation has occurred
+
+# Created at 2020-05-25T08:54:01.821
+WARNING: Illegal reflective access by org.apache.ibatis.reflection.Reflector (file:/D:/Maven/LocalWarehouse/org/mybatis/mybatis/3.4.5/mybatis-3.4.5.jar) to method java.lang.Class.checkPackageAccess(java.lang.SecurityManager,java.lang.ClassLoader,boolean)
+
+# Created at 2020-05-25T08:54:01.822
+WARNING: Please consider reporting this to the maintainers of org.apache.ibatis.reflection.Reflector
+
+# Created at 2020-05-25T08:54:01.822
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+
+# Created at 2020-05-25T08:54:01.828
+WARNING: All illegal access operations will be denied in a future release
+

@@ -1,0 +1,253 @@
+2020-03-30 11:42:19,719 0      [           main] INFO  web.WebTestContextBootstrapper  - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2020-03-30 11:42:19,754 35     [           main] INFO  web.WebTestContextBootstrapper  - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@5136d012, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@5939a379, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@e1de817, org.springframework.test.context.support.DirtiesContextTestExecutionListener@52102734, org.springframework.test.context.transaction.TransactionalTestExecutionListener@3541cb24, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@2177849e]
+2020-03-30 11:42:20,251 532    [           main] INFO  ry.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from file [D:\GraduationProject\PmOA\target\classes\applicationContext.xml]
+2020-03-30 11:42:21,220 1501   [           main] INFO  ry.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from file [D:\GraduationProject\PmOA\target\classes\springmvc.xml]
+2020-03-30 11:42:21,511 1792   [           main] INFO  ry.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from file [D:\GraduationProject\PmOA\target\classes\sqlMapConfig.xml]
+2020-03-30 11:42:22,082 2363   [           main] INFO  t.GenericWebApplicationContext  - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@16610890: startup date [Mon Mar 30 11:42:22 CST 2020]; root of context hierarchy
+2020-03-30 11:42:22,648 2929   [           main] INFO         com.mchange.v2.log.MLog  - MLog clients using log4j logging.
+2020-03-30 11:42:23,200 3481   [           main] INFO  m.mchange.v2.c3p0.C3P0Registry  - Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
+2020-03-30 11:42:24,199 4480   [           main] INFO  andler.SimpleUrlHandlerMapping  - Mapped URL path [/assets/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+2020-03-30 11:42:24,293 4574   [           main] INFO  n.RequestMappingHandlerMapping  - Mapped "{[/admin/verify]}" onto public java.lang.String com.policymanage.controller.AdminController.verify(javax.servlet.http.HttpSession)
+2020-03-30 11:42:24,295 4576   [           main] INFO  n.RequestMappingHandlerMapping  - Mapped "{[/admin/login]}" onto public java.lang.String com.policymanage.controller.AdminController.login(java.lang.String,java.lang.String,javax.servlet.http.HttpSession,javax.servlet.http.HttpServletRequest)
+2020-03-30 11:42:24,296 4577   [           main] INFO  n.RequestMappingHandlerMapping  - Mapped "{[/admin/skipLogin]}" onto public void com.policymanage.controller.AdminController.skipLogin(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.lang.Exception
+2020-03-30 11:42:24,296 4577   [           main] INFO  n.RequestMappingHandlerMapping  - Mapped "{[/admin/insertAdmin]}" onto public java.lang.String com.policymanage.controller.AdminController.insertAdmin(com.policymanage.entity.Admin)
+2020-03-30 11:42:24,296 4577   [           main] INFO  n.RequestMappingHandlerMapping  - Mapped "{[/admin/skipRegister]}" onto public java.lang.String com.policymanage.controller.AdminController.skipRegister()
+2020-03-30 11:42:24,297 4578   [           main] INFO  n.RequestMappingHandlerMapping  - Mapped "{[/admin/register]}" onto public java.lang.String com.policymanage.controller.AdminController.Register(com.policymanage.entity.Admin)
+2020-03-30 11:42:24,304 4585   [           main] INFO  n.RequestMappingHandlerMapping  - Mapped "{[/assess/getAssess]}" onto public java.lang.String com.policymanage.controller.AssessController.getFile(java.lang.Integer,javax.servlet.http.HttpServletRequest,org.springframework.ui.Model)
+2020-03-30 11:42:24,304 4585   [           main] INFO  n.RequestMappingHandlerMapping  - Mapped "{[/assess/getAllInfo]}" onto public java.lang.String com.policymanage.controller.AssessController.getlist(org.springframework.ui.ModelMap,java.lang.Integer,java.lang.Integer)
+2020-03-30 11:42:24,305 4586   [           main] INFO  n.RequestMappingHandlerMapping  - Mapped "{[/assess/uploadFile]}" onto public java.lang.String com.policymanage.controller.AssessController.uploadFileById(org.springframework.web.multipart.MultipartFile,java.lang.Integer)
+2020-03-30 11:42:24,305 4586   [           main] INFO  n.RequestMappingHandlerMapping  - Mapped "{[/assess/queryAssess]}" onto public java.lang.String com.policymanage.controller.AssessController.queryEnterprise(java.lang.Integer,java.lang.String,org.springframework.ui.ModelMap)
+2020-03-30 11:42:24,305 4586   [           main] INFO  n.RequestMappingHandlerMapping  - Mapped "{[/assess/skipDashboard]}" onto public java.lang.String com.policymanage.controller.AssessController.skipDashboard()
+2020-03-30 11:42:24,306 4587   [           main] INFO  n.RequestMappingHandlerMapping  - Mapped "{[/assess/excelDown]}" onto public java.lang.String com.policymanage.controller.AssessController.excelDown(javax.servlet.http.HttpServletResponse,javax.servlet.http.HttpServletRequest) throws java.lang.Exception
+2020-03-30 11:42:24,306 4587   [           main] INFO  n.RequestMappingHandlerMapping  - Mapped "{[/assess/singleExcelDown]}" onto public java.lang.String com.policymanage.controller.AssessController.singleExcelDown(javax.servlet.http.HttpServletResponse,javax.servlet.http.HttpServletRequest,java.lang.Integer) throws java.lang.Exception
+2020-03-30 11:42:24,306 4587   [           main] INFO  n.RequestMappingHandlerMapping  - Mapped "{[/assess/skipAssessAdd]}" onto public java.lang.String com.policymanage.controller.AssessController.skipAssessAdd()
+2020-03-30 11:42:24,306 4587   [           main] INFO  n.RequestMappingHandlerMapping  - Mapped "{[/assess/editAssess]}" onto public java.lang.String com.policymanage.controller.AssessController.editAssess(com.policymanage.entity.Assess,javax.servlet.http.HttpServletRequest,org.springframework.ui.Model)
+2020-03-30 11:42:24,306 4587   [           main] INFO  n.RequestMappingHandlerMapping  - Mapped "{[/assess/deleteAssess]}" onto public java.lang.String com.policymanage.controller.AssessController.deleteAssess(java.lang.Integer)
+2020-03-30 11:42:24,307 4588   [           main] INFO  n.RequestMappingHandlerMapping  - Mapped "{[/assess/updateAssess]}" onto public java.lang.String com.policymanage.controller.AssessController.updateAssess(com.policymanage.entity.Assess)
+2020-03-30 11:42:24,307 4588   [           main] INFO  n.RequestMappingHandlerMapping  - Mapped "{[/assess/queryByTimeBucket]}" onto public java.lang.String com.policymanage.controller.AssessController.queryByTimeBucket(java.lang.String,java.lang.String,org.springframework.ui.Model)
+2020-03-30 11:42:24,307 4588   [           main] INFO  n.RequestMappingHandlerMapping  - Mapped "{[/assess/insertAssess]}" onto public java.lang.String com.policymanage.controller.AssessController.insertAssess(com.policymanage.entity.Assess)
+2020-03-30 11:42:24,310 4591   [           main] INFO  n.RequestMappingHandlerMapping  - Mapped "{[/enterprise/getAllInfo]}" onto public java.lang.String com.policymanage.controller.EnterpriseController.getlist(org.springframework.ui.ModelMap,java.lang.Integer,java.lang.Integer)
+2020-03-30 11:42:24,311 4592   [           main] INFO  n.RequestMappingHandlerMapping  - Mapped "{[/enterprise/skipEnterpriseAdd]}" onto public java.lang.String com.policymanage.controller.EnterpriseController.skipEnterpriseAdd()
+2020-03-30 11:42:24,312 4593   [           main] INFO  n.RequestMappingHandlerMapping  - Mapped "{[/enterprise/insertEnterprise]}" onto public java.lang.String com.policymanage.controller.EnterpriseController.insertEnterprise(javax.servlet.http.HttpServletResponse,com.policymanage.entity.Enterprise) throws java.io.IOException
+2020-03-30 11:42:24,312 4593   [           main] INFO  n.RequestMappingHandlerMapping  - Mapped "{[/enterprise/uploadFile]}" onto public java.lang.String com.policymanage.controller.EnterpriseController.uploadFileById(org.springframework.web.multipart.MultipartFile,java.lang.Integer)
+2020-03-30 11:42:24,313 4594   [           main] INFO  n.RequestMappingHandlerMapping  - Mapped "{[/enterprise/deleteEnterprise]}" onto public java.lang.String com.policymanage.controller.EnterpriseController.deleteEnterprise(java.lang.Integer)
+2020-03-30 11:42:24,313 4594   [           main] INFO  n.RequestMappingHandlerMapping  - Mapped "{[/enterprise/getEnterprise]}" onto public java.lang.String com.policymanage.controller.EnterpriseController.getEnterprise(java.lang.Integer,javax.servlet.http.HttpServletRequest,org.springframework.ui.Model)
+2020-03-30 11:42:24,314 4595   [           main] INFO  n.RequestMappingHandlerMapping  - Mapped "{[/enterprise/queryEnterprise]}" onto public java.lang.String com.policymanage.controller.EnterpriseController.queryEnterprise(java.lang.Integer,java.lang.String,org.springframework.ui.ModelMap)
+2020-03-30 11:42:24,314 4595   [           main] INFO  n.RequestMappingHandlerMapping  - Mapped "{[/enterprise/skipDashboard]}" onto public java.lang.String com.policymanage.controller.EnterpriseController.skipDashboard()
+2020-03-30 11:42:24,315 4596   [           main] INFO  n.RequestMappingHandlerMapping  - Mapped "{[/enterprise/editEnterprise]}" onto public java.lang.String com.policymanage.controller.EnterpriseController.editEnterprise(com.policymanage.entity.Enterprise,org.springframework.ui.Model)
+2020-03-30 11:42:24,315 4596   [           main] INFO  n.RequestMappingHandlerMapping  - Mapped "{[/enterprise/excelDown]}" onto public java.lang.String com.policymanage.controller.EnterpriseController.excelDown(javax.servlet.http.HttpServletResponse,javax.servlet.http.HttpServletRequest) throws java.lang.Exception
+2020-03-30 11:42:24,316 4597   [           main] INFO  n.RequestMappingHandlerMapping  - Mapped "{[/enterprise/updateEnterprise]}" onto public java.lang.String com.policymanage.controller.EnterpriseController.updateEnterprise(com.policymanage.entity.Enterprise)
+2020-03-30 11:42:24,321 4602   [           main] INFO  n.RequestMappingHandlerMapping  - Mapped "{[/file/getFile]}" onto public java.lang.String com.policymanage.controller.FileController.getFile(java.lang.Integer,javax.servlet.http.HttpServletRequest,org.springframework.ui.Model)
+2020-03-30 11:42:24,322 4603   [           main] INFO  n.RequestMappingHandlerMapping  - Mapped "{[/file/getAllInfo]}" onto public java.lang.String com.policymanage.controller.FileController.getlist(org.springframework.ui.ModelMap,java.lang.Integer,java.lang.Integer)
+2020-03-30 11:42:24,323 4604   [           main] INFO  n.RequestMappingHandlerMapping  - Mapped "{[/file/uploadFile]}" onto public java.lang.String com.policymanage.controller.FileController.uploadFileById(org.springframework.web.multipart.MultipartFile,java.lang.Integer)
+2020-03-30 11:42:24,324 4605   [           main] INFO  n.RequestMappingHandlerMapping  - Mapped "{[/file/queryFile]}" onto public java.lang.String com.policymanage.controller.FileController.queryEnterprise(java.lang.Integer,java.lang.String,org.springframework.ui.ModelMap)
+2020-03-30 11:42:24,325 4606   [           main] INFO  n.RequestMappingHandlerMapping  - Mapped "{[/file/skipDashboard]}" onto public java.lang.String com.policymanage.controller.FileController.skipDashboard()
+2020-03-30 11:42:24,326 4607   [           main] INFO  n.RequestMappingHandlerMapping  - Mapped "{[/file/excelDown]}" onto public java.lang.String com.policymanage.controller.FileController.excelDown(javax.servlet.http.HttpServletResponse,javax.servlet.http.HttpServletRequest) throws java.lang.Exception
+2020-03-30 11:42:24,326 4607   [           main] INFO  n.RequestMappingHandlerMapping  - Mapped "{[/file/skipFileAdd]}" onto public java.lang.String com.policymanage.controller.FileController.skipFileAdd()
+2020-03-30 11:42:24,326 4607   [           main] INFO  n.RequestMappingHandlerMapping  - Mapped "{[/file/editFile]}" onto public java.lang.String com.policymanage.controller.FileController.editFile(com.policymanage.entity.File,javax.servlet.http.HttpServletRequest,org.springframework.ui.Model)
+2020-03-30 11:42:24,326 4607   [           main] INFO  n.RequestMappingHandlerMapping  - Mapped "{[/file/updateFile]}" onto public java.lang.String com.policymanage.controller.FileController.updateFile(com.policymanage.entity.File)
+2020-03-30 11:42:24,326 4607   [           main] INFO  n.RequestMappingHandlerMapping  - Mapped "{[/file/insertFile]}" onto public java.lang.String com.policymanage.controller.FileController.insertFile(com.policymanage.entity.File)
+2020-03-30 11:42:24,327 4608   [           main] INFO  n.RequestMappingHandlerMapping  - Mapped "{[/file/deleteFile]}" onto public java.lang.String com.policymanage.controller.FileController.deleteFile(java.lang.Integer)
+2020-03-30 11:42:24,330 4611   [           main] INFO  n.RequestMappingHandlerMapping  - Mapped "{[/param/skipDashboard]}" onto public java.lang.String com.policymanage.controller.ParamController.skipDashboard()
+2020-03-30 11:42:24,330 4611   [           main] INFO  n.RequestMappingHandlerMapping  - Mapped "{[/param/skipParamAdd]}" onto public java.lang.String com.policymanage.controller.ParamController.skipParamAdd()
+2020-03-30 11:42:24,330 4611   [           main] INFO  n.RequestMappingHandlerMapping  - Mapped "{[/param/insertParam]}" onto public java.lang.String com.policymanage.controller.ParamController.insertParam(com.policymanage.entity.Param)
+2020-03-30 11:42:24,811 5092   [           main] INFO  n.RequestMappingHandlerAdapter  - Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@16610890: startup date [Mon Mar 30 11:42:22 CST 2020]; root of context hierarchy
+2020-03-30 11:42:24,897 5178   [           main] INFO  n.RequestMappingHandlerAdapter  - Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@16610890: startup date [Mon Mar 30 11:42:22 CST 2020]; root of context hierarchy
+2020-03-30 11:42:25,167 5448   [           main] INFO  n.RequestMappingHandlerMapping  - Mapped "{[/enterprise/getAllInfo]}" onto public java.lang.String com.policymanage.controller.EnterpriseController.getlist(org.springframework.ui.ModelMap,java.lang.Integer,java.lang.Integer)
+2020-03-30 11:42:25,168 5449   [           main] INFO  n.RequestMappingHandlerMapping  - Mapped "{[/enterprise/skipEnterpriseAdd]}" onto public java.lang.String com.policymanage.controller.EnterpriseController.skipEnterpriseAdd()
+2020-03-30 11:42:25,168 5449   [           main] INFO  n.RequestMappingHandlerMapping  - Mapped "{[/enterprise/insertEnterprise]}" onto public java.lang.String com.policymanage.controller.EnterpriseController.insertEnterprise(javax.servlet.http.HttpServletResponse,com.policymanage.entity.Enterprise) throws java.io.IOException
+2020-03-30 11:42:25,168 5449   [           main] INFO  n.RequestMappingHandlerMapping  - Mapped "{[/enterprise/uploadFile]}" onto public java.lang.String com.policymanage.controller.EnterpriseController.uploadFileById(org.springframework.web.multipart.MultipartFile,java.lang.Integer)
+2020-03-30 11:42:25,168 5449   [           main] INFO  n.RequestMappingHandlerMapping  - Mapped "{[/enterprise/deleteEnterprise]}" onto public java.lang.String com.policymanage.controller.EnterpriseController.deleteEnterprise(java.lang.Integer)
+2020-03-30 11:42:25,168 5449   [           main] INFO  n.RequestMappingHandlerMapping  - Mapped "{[/enterprise/getEnterprise]}" onto public java.lang.String com.policymanage.controller.EnterpriseController.getEnterprise(java.lang.Integer,javax.servlet.http.HttpServletRequest,org.springframework.ui.Model)
+2020-03-30 11:42:25,169 5450   [           main] INFO  n.RequestMappingHandlerMapping  - Mapped "{[/enterprise/queryEnterprise]}" onto public java.lang.String com.policymanage.controller.EnterpriseController.queryEnterprise(java.lang.Integer,java.lang.String,org.springframework.ui.ModelMap)
+2020-03-30 11:42:25,169 5450   [           main] INFO  n.RequestMappingHandlerMapping  - Mapped "{[/enterprise/skipDashboard]}" onto public java.lang.String com.policymanage.controller.EnterpriseController.skipDashboard()
+2020-03-30 11:42:25,169 5450   [           main] INFO  n.RequestMappingHandlerMapping  - Mapped "{[/enterprise/editEnterprise]}" onto public java.lang.String com.policymanage.controller.EnterpriseController.editEnterprise(com.policymanage.entity.Enterprise,org.springframework.ui.Model)
+2020-03-30 11:42:25,170 5451   [           main] INFO  n.RequestMappingHandlerMapping  - Mapped "{[/enterprise/excelDown]}" onto public java.lang.String com.policymanage.controller.EnterpriseController.excelDown(javax.servlet.http.HttpServletResponse,javax.servlet.http.HttpServletRequest) throws java.lang.Exception
+2020-03-30 11:42:25,171 5452   [           main] INFO  n.RequestMappingHandlerMapping  - Mapped "{[/enterprise/updateEnterprise]}" onto public java.lang.String com.policymanage.controller.EnterpriseController.updateEnterprise(com.policymanage.entity.Enterprise)
+2020-03-30 11:42:25,190 5471   [           main] INFO  n.RequestMappingHandlerAdapter  - Looking for @ControllerAdvice: org.springframework.test.web.servlet.setup.StubWebApplicationContext@5a8816cc
+2020-03-30 11:42:25,211 5492   [           main] INFO  rk.mock.web.MockServletContext  - Initializing Spring FrameworkServlet ''
+2020-03-30 11:42:25,211 5492   [           main] INFO  .servlet.TestDispatcherServlet  - FrameworkServlet '': initialization started
+2020-03-30 11:42:25,212 5493   [           main] INFO  .servlet.TestDispatcherServlet  - FrameworkServlet '': initialization completed in 1 ms
+2020-03-30 11:42:25,224 5505   [       Thread-0] INFO  t.GenericWebApplicationContext  - Closing org.springframework.web.context.support.GenericWebApplicationContext@16610890: startup date [Mon Mar 30 11:42:22 CST 2020]; root of context hierarchy
+2020-04-06 12:01:50,064 0      [           main] INFO  activiti.engine.ProcessEngines  - Initializing process engine using configuration 'file:/D:/GraduationProject/PmOA/target/classes/activiti.cfg.xml'
+2020-04-06 12:01:50,069 5      [           main] INFO  activiti.engine.ProcessEngines  - initializing process engine for resource file:/D:/GraduationProject/PmOA/target/classes/activiti.cfg.xml
+2020-04-06 12:01:50,412 348    [           main] INFO  ry.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from InputStream resource [resource loaded through InputStream]
+2020-04-06 12:01:54,310 4246   [           main] INFO  ti.engine.impl.db.DbSqlSession  - performing create on engine with resource org/activiti/db/create/activiti.mysql.create.engine.sql
+2020-04-06 12:01:54,312 4248   [           main] INFO  ti.engine.impl.db.DbSqlSession  - Found MySQL: majorVersion=5 minorVersion=7
+2020-04-06 12:01:57,385 7321   [           main] INFO  ti.engine.impl.db.DbSqlSession  - performing create on history with resource org/activiti/db/create/activiti.mysql.create.history.sql
+2020-04-06 12:01:57,386 7322   [           main] INFO  ti.engine.impl.db.DbSqlSession  - Found MySQL: majorVersion=5 minorVersion=7
+2020-04-06 12:01:58,031 7967   [           main] INFO  ti.engine.impl.db.DbSqlSession  - performing create on identity with resource org/activiti/db/create/activiti.mysql.create.identity.sql
+2020-04-06 12:01:58,032 7968   [           main] INFO  ti.engine.impl.db.DbSqlSession  - Found MySQL: majorVersion=5 minorVersion=7
+2020-04-06 12:01:58,380 8316   [           main] INFO  .engine.impl.ProcessEngineImpl  - ProcessEngine default created
+2020-04-06 12:01:58,386 8322   [           main] INFO  activiti.engine.ProcessEngines  - initialised process engine default
+2020-04-06 12:01:58,441 8377   [           main] INFO  mpl.bpmn.deployer.BpmnDeployer  - Processing resource workflow.bpmn
+2020-04-06 12:01:58,695 8631   [           main] INFO  mpl.bpmn.deployer.BpmnDeployer  - Processing resource workflow.png
+2020-04-06 12:03:49,301 0      [           main] INFO  activiti.engine.ProcessEngines  - Initializing process engine using configuration 'file:/D:/GraduationProject/PmOA/target/classes/activiti.cfg.xml'
+2020-04-06 12:03:49,304 3      [           main] INFO  activiti.engine.ProcessEngines  - initializing process engine for resource file:/D:/GraduationProject/PmOA/target/classes/activiti.cfg.xml
+2020-04-06 12:03:49,455 154    [           main] INFO  ry.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from InputStream resource [resource loaded through InputStream]
+2020-04-06 12:03:53,077 3776   [           main] INFO  .engine.impl.ProcessEngineImpl  - ProcessEngine default created
+2020-04-06 12:03:53,098 3797   [           main] INFO  activiti.engine.ProcessEngines  - initialised process engine default
+2020-04-06 12:03:53,135 3834   [           main] INFO  mpl.bpmn.deployer.BpmnDeployer  - Processing resource workflow.bpmn
+2020-04-06 12:03:53,557 4256   [           main] INFO  mpl.bpmn.deployer.BpmnDeployer  - Processing resource workflow.png
+2020-04-06 12:17:22,363 0      [           main] INFO  activiti.engine.ProcessEngines  - Initializing process engine using configuration 'file:/D:/GraduationProject/PmOA/target/classes/activiti.cfg.xml'
+2020-04-06 12:17:22,365 2      [           main] INFO  activiti.engine.ProcessEngines  - initializing process engine for resource file:/D:/GraduationProject/PmOA/target/classes/activiti.cfg.xml
+2020-04-06 12:17:22,531 168    [           main] INFO  ry.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from InputStream resource [resource loaded through InputStream]
+2020-04-06 12:17:25,449 3086   [           main] INFO  ti.engine.impl.db.DbSqlSession  - performing create on engine with resource org/activiti/db/create/activiti.mysql.create.engine.sql
+2020-04-06 12:17:25,450 3087   [           main] INFO  ti.engine.impl.db.DbSqlSession  - Found MySQL: majorVersion=5 minorVersion=7
+2020-04-06 12:17:28,259 5896   [           main] INFO  ti.engine.impl.db.DbSqlSession  - performing create on history with resource org/activiti/db/create/activiti.mysql.create.history.sql
+2020-04-06 12:17:28,259 5896   [           main] INFO  ti.engine.impl.db.DbSqlSession  - Found MySQL: majorVersion=5 minorVersion=7
+2020-04-06 12:17:29,024 6661   [           main] INFO  ti.engine.impl.db.DbSqlSession  - performing create on identity with resource org/activiti/db/create/activiti.mysql.create.identity.sql
+2020-04-06 12:17:29,024 6661   [           main] INFO  ti.engine.impl.db.DbSqlSession  - Found MySQL: majorVersion=5 minorVersion=7
+2020-04-06 12:17:29,272 6909   [           main] INFO  .engine.impl.ProcessEngineImpl  - ProcessEngine default created
+2020-04-06 12:17:29,277 6914   [           main] INFO  activiti.engine.ProcessEngines  - initialised process engine default
+2020-04-06 12:17:29,317 6954   [           main] INFO  mpl.bpmn.deployer.BpmnDeployer  - Processing resource workflow.bpmn
+2020-04-06 12:17:29,549 7186   [           main] INFO  mpl.bpmn.deployer.BpmnDeployer  - Processing resource workflow.png
+2020-04-06 15:11:35,790 0      [           main] INFO  activiti.engine.ProcessEngines  - Initializing process engine using configuration 'file:/D:/GraduationProject/PmOA/target/classes/activiti.cfg.xml'
+2020-04-06 15:11:35,794 4      [           main] INFO  activiti.engine.ProcessEngines  - initializing process engine for resource file:/D:/GraduationProject/PmOA/target/classes/activiti.cfg.xml
+2020-04-06 15:11:36,007 217    [           main] INFO  ry.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from InputStream resource [resource loaded through InputStream]
+2020-04-06 15:11:39,242 3452   [           main] INFO  ti.engine.impl.db.DbSqlSession  - performing create on engine with resource org/activiti/db/create/activiti.mysql.create.engine.sql
+2020-04-06 15:11:39,243 3453   [           main] INFO  ti.engine.impl.db.DbSqlSession  - Found MySQL: majorVersion=5 minorVersion=7
+2020-04-06 15:11:41,662 5872   [           main] INFO  ti.engine.impl.db.DbSqlSession  - performing create on history with resource org/activiti/db/create/activiti.mysql.create.history.sql
+2020-04-06 15:11:41,663 5873   [           main] INFO  ti.engine.impl.db.DbSqlSession  - Found MySQL: majorVersion=5 minorVersion=7
+2020-04-06 15:11:42,562 6772   [           main] INFO  ti.engine.impl.db.DbSqlSession  - performing create on identity with resource org/activiti/db/create/activiti.mysql.create.identity.sql
+2020-04-06 15:11:42,563 6773   [           main] INFO  ti.engine.impl.db.DbSqlSession  - Found MySQL: majorVersion=5 minorVersion=7
+2020-04-06 15:11:42,962 7172   [           main] INFO  .engine.impl.ProcessEngineImpl  - ProcessEngine default created
+2020-04-06 15:11:42,966 7176   [           main] INFO  activiti.engine.ProcessEngines  - initialised process engine default
+2020-04-06 15:11:43,008 7218   [           main] INFO  mpl.bpmn.deployer.BpmnDeployer  - Processing resource MainFlow.bpmn
+2020-04-06 15:11:43,285 7495   [           main] INFO  mpl.bpmn.deployer.BpmnDeployer  - Processing resource MainFlow.png
+2020-04-06 19:12:54,638 0      [           main] INFO  activiti.engine.ProcessEngines  - Initializing process engine using configuration 'file:/D:/GraduationProject/PmOA/target/classes/activiti.cfg.xml'
+2020-04-06 19:12:54,640 2      [           main] INFO  activiti.engine.ProcessEngines  - initializing process engine for resource file:/D:/GraduationProject/PmOA/target/classes/activiti.cfg.xml
+2020-04-06 19:12:54,935 297    [           main] INFO  ry.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from InputStream resource [resource loaded through InputStream]
+2020-04-06 19:12:58,402 3764   [           main] INFO  .engine.impl.ProcessEngineImpl  - ProcessEngine default created
+2020-04-06 19:12:58,410 3772   [           main] INFO  activiti.engine.ProcessEngines  - initialised process engine default
+2020-04-06 19:13:27,164 0      [           main] INFO  activiti.engine.ProcessEngines  - Initializing process engine using configuration 'file:/D:/GraduationProject/PmOA/target/classes/activiti.cfg.xml'
+2020-04-06 19:13:27,167 3      [           main] INFO  activiti.engine.ProcessEngines  - initializing process engine for resource file:/D:/GraduationProject/PmOA/target/classes/activiti.cfg.xml
+2020-04-06 19:13:27,352 188    [           main] INFO  ry.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from InputStream resource [resource loaded through InputStream]
+2020-04-06 19:13:30,453 3289   [           main] INFO  .engine.impl.ProcessEngineImpl  - ProcessEngine default created
+2020-04-06 19:13:30,459 3295   [           main] INFO  activiti.engine.ProcessEngines  - initialised process engine default
+2020-04-06 19:13:30,489 3325   [           main] INFO  mpl.bpmn.deployer.BpmnDeployer  - Processing resource MainFlow.bpmn
+2020-04-06 19:13:30,801 3637   [           main] INFO  mpl.bpmn.deployer.BpmnDeployer  - Processing resource MainFlow.png
+2020-04-07 08:39:15,552 0      [           main] INFO  activiti.engine.ProcessEngines  - Initializing process engine using configuration 'file:/D:/GraduationProject/PmOA/target/classes/activiti.cfg.xml'
+2020-04-07 08:39:15,554 2      [           main] INFO  activiti.engine.ProcessEngines  - initializing process engine for resource file:/D:/GraduationProject/PmOA/target/classes/activiti.cfg.xml
+2020-04-07 08:39:15,834 282    [           main] INFO  ry.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from InputStream resource [resource loaded through InputStream]
+2020-04-07 08:39:19,102 3550   [           main] INFO  ti.engine.impl.db.DbSqlSession  - performing create on engine with resource org/activiti/db/create/activiti.mysql.create.engine.sql
+2020-04-07 08:39:19,102 3550   [           main] INFO  ti.engine.impl.db.DbSqlSession  - Found MySQL: majorVersion=5 minorVersion=7
+2020-04-07 08:39:21,655 6103   [           main] INFO  ti.engine.impl.db.DbSqlSession  - performing create on history with resource org/activiti/db/create/activiti.mysql.create.history.sql
+2020-04-07 08:39:21,656 6104   [           main] INFO  ti.engine.impl.db.DbSqlSession  - Found MySQL: majorVersion=5 minorVersion=7
+2020-04-07 08:39:22,466 6914   [           main] INFO  ti.engine.impl.db.DbSqlSession  - performing create on identity with resource org/activiti/db/create/activiti.mysql.create.identity.sql
+2020-04-07 08:39:22,467 6915   [           main] INFO  ti.engine.impl.db.DbSqlSession  - Found MySQL: majorVersion=5 minorVersion=7
+2020-04-07 08:39:22,712 7160   [           main] INFO  .engine.impl.ProcessEngineImpl  - ProcessEngine default created
+2020-04-07 08:39:22,720 7168   [           main] INFO  activiti.engine.ProcessEngines  - initialised process engine default
+2020-04-07 08:39:22,757 7205   [           main] INFO  mpl.bpmn.deployer.BpmnDeployer  - Processing resource MainFlow.bpmn
+2020-04-07 08:39:23,062 7510   [           main] INFO  mpl.bpmn.deployer.BpmnDeployer  - Processing resource MainFlow.png
+2020-04-07 09:38:56,345 0      [           main] INFO  activiti.engine.ProcessEngines  - Initializing process engine using configuration 'file:/D:/GraduationProject/PmOA/target/classes/activiti.cfg.xml'
+2020-04-07 09:38:56,349 4      [           main] INFO  activiti.engine.ProcessEngines  - initializing process engine for resource file:/D:/GraduationProject/PmOA/target/classes/activiti.cfg.xml
+2020-04-07 09:38:56,523 178    [           main] INFO  ry.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from InputStream resource [resource loaded through InputStream]
+2020-04-07 09:38:59,425 3080   [           main] INFO  ti.engine.impl.db.DbSqlSession  - performing create on engine with resource org/activiti/db/create/activiti.mysql.create.engine.sql
+2020-04-07 09:38:59,426 3081   [           main] INFO  ti.engine.impl.db.DbSqlSession  - Found MySQL: majorVersion=5 minorVersion=7
+2020-04-07 09:39:01,917 5572   [           main] INFO  ti.engine.impl.db.DbSqlSession  - performing create on history with resource org/activiti/db/create/activiti.mysql.create.history.sql
+2020-04-07 09:39:01,918 5573   [           main] INFO  ti.engine.impl.db.DbSqlSession  - Found MySQL: majorVersion=5 minorVersion=7
+2020-04-07 09:39:02,712 6367   [           main] INFO  ti.engine.impl.db.DbSqlSession  - performing create on identity with resource org/activiti/db/create/activiti.mysql.create.identity.sql
+2020-04-07 09:39:02,712 6367   [           main] INFO  ti.engine.impl.db.DbSqlSession  - Found MySQL: majorVersion=5 minorVersion=7
+2020-04-07 09:39:02,994 6649   [           main] INFO  .engine.impl.ProcessEngineImpl  - ProcessEngine default created
+2020-04-07 09:39:02,998 6653   [           main] INFO  activiti.engine.ProcessEngines  - initialised process engine default
+2020-04-07 09:39:03,039 6694   [           main] INFO  mpl.bpmn.deployer.BpmnDeployer  - Processing resource MainFlow.bpmn
+2020-04-07 09:39:03,283 6938   [           main] INFO  mpl.bpmn.deployer.BpmnDeployer  - Processing resource MainFlow.png
+2020-04-07 11:12:39,788 0      [           main] INFO  activiti.engine.ProcessEngines  - Initializing process engine using configuration 'file:/D:/GraduationProject/PmOA/target/classes/activiti.cfg.xml'
+2020-04-07 11:12:39,790 2      [           main] INFO  activiti.engine.ProcessEngines  - initializing process engine for resource file:/D:/GraduationProject/PmOA/target/classes/activiti.cfg.xml
+2020-04-07 11:12:40,114 326    [           main] INFO  ry.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from InputStream resource [resource loaded through InputStream]
+2020-04-07 11:12:46,266 6478   [           main] INFO  ti.engine.impl.db.DbSqlSession  - performing create on engine with resource org/activiti/db/create/activiti.mysql.create.engine.sql
+2020-04-07 11:12:46,267 6479   [           main] INFO  ti.engine.impl.db.DbSqlSession  - Found MySQL: majorVersion=5 minorVersion=7
+2020-04-07 11:12:49,269 9481   [           main] INFO  ti.engine.impl.db.DbSqlSession  - performing create on history with resource org/activiti/db/create/activiti.mysql.create.history.sql
+2020-04-07 11:12:49,270 9482   [           main] INFO  ti.engine.impl.db.DbSqlSession  - Found MySQL: majorVersion=5 minorVersion=7
+2020-04-07 11:12:50,165 10377  [           main] INFO  ti.engine.impl.db.DbSqlSession  - performing create on identity with resource org/activiti/db/create/activiti.mysql.create.identity.sql
+2020-04-07 11:12:50,165 10377  [           main] INFO  ti.engine.impl.db.DbSqlSession  - Found MySQL: majorVersion=5 minorVersion=7
+2020-04-07 11:12:50,520 10732  [           main] INFO  .engine.impl.ProcessEngineImpl  - ProcessEngine default created
+2020-04-07 11:12:50,531 10743  [           main] INFO  activiti.engine.ProcessEngines  - initialised process engine default
+2020-04-07 11:12:50,590 10802  [           main] INFO  mpl.bpmn.deployer.BpmnDeployer  - Processing resource MainFlow.bpmn
+2020-04-07 11:12:51,189 11401  [           main] INFO  mpl.bpmn.deployer.BpmnDeployer  - Processing resource MainFlow.png
+2020-04-08 15:37:43,000 0      [           main] INFO  activiti.engine.ProcessEngines  - Initializing process engine using configuration 'file:/D:/GraduationProject/PmOA/target/classes/activiti.cfg.xml'
+2020-04-08 15:37:43,002 2      [           main] INFO  activiti.engine.ProcessEngines  - initializing process engine for resource file:/D:/GraduationProject/PmOA/target/classes/activiti.cfg.xml
+2020-04-08 15:37:43,212 212    [           main] INFO  ry.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from InputStream resource [resource loaded through InputStream]
+2020-04-08 15:37:46,374 3374   [           main] INFO  ti.engine.impl.db.DbSqlSession  - performing create on engine with resource org/activiti/db/create/activiti.mysql.create.engine.sql
+2020-04-08 15:37:46,376 3376   [           main] INFO  ti.engine.impl.db.DbSqlSession  - Found MySQL: majorVersion=5 minorVersion=7
+2020-04-08 15:37:48,736 5736   [           main] INFO  ti.engine.impl.db.DbSqlSession  - performing create on history with resource org/activiti/db/create/activiti.mysql.create.history.sql
+2020-04-08 15:37:48,737 5737   [           main] INFO  ti.engine.impl.db.DbSqlSession  - Found MySQL: majorVersion=5 minorVersion=7
+2020-04-08 15:37:49,546 6546   [           main] INFO  ti.engine.impl.db.DbSqlSession  - performing create on identity with resource org/activiti/db/create/activiti.mysql.create.identity.sql
+2020-04-08 15:37:49,546 6546   [           main] INFO  ti.engine.impl.db.DbSqlSession  - Found MySQL: majorVersion=5 minorVersion=7
+2020-04-08 15:37:49,830 6830   [           main] INFO  .engine.impl.ProcessEngineImpl  - ProcessEngine default created
+2020-04-08 15:37:49,844 6844   [           main] INFO  activiti.engine.ProcessEngines  - initialised process engine default
+2020-04-08 15:37:49,881 6881   [           main] INFO  mpl.bpmn.deployer.BpmnDeployer  - Processing resource MainFlow.bpmn
+2020-04-08 15:37:50,124 7124   [           main] INFO  mpl.bpmn.deployer.BpmnDeployer  - Processing resource MainFlow.png
+2020-04-09 13:31:32,671 0      [           main] INFO  activiti.engine.ProcessEngines  - Initializing process engine using configuration 'file:/D:/GraduationProject/PmOA/target/classes/activiti.cfg.xml'
+2020-04-09 13:31:32,673 2      [           main] INFO  activiti.engine.ProcessEngines  - initializing process engine for resource file:/D:/GraduationProject/PmOA/target/classes/activiti.cfg.xml
+2020-04-09 13:31:32,888 217    [           main] INFO  ry.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from InputStream resource [resource loaded through InputStream]
+2020-04-09 13:31:36,084 3413   [           main] INFO  .engine.impl.ProcessEngineImpl  - ProcessEngine default created
+2020-04-09 13:31:36,090 3419   [           main] INFO  activiti.engine.ProcessEngines  - initialised process engine default
+2020-04-09 13:31:36,109 3438   [           main] INFO  mpl.bpmn.deployer.BpmnDeployer  - Processing resource MainFlow.bpmn
+2020-04-09 13:31:36,405 3734   [           main] INFO  mpl.bpmn.deployer.BpmnDeployer  - Processing resource MainFlow.png
+2020-04-09 14:52:57,774 0      [           main] INFO  activiti.engine.ProcessEngines  - Initializing process engine using configuration 'file:/D:/GraduationProject/PmOA/target/classes/activiti.cfg.xml'
+2020-04-09 14:52:57,778 4      [           main] INFO  activiti.engine.ProcessEngines  - initializing process engine for resource file:/D:/GraduationProject/PmOA/target/classes/activiti.cfg.xml
+2020-04-09 14:52:58,006 232    [           main] INFO  ry.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from InputStream resource [resource loaded through InputStream]
+2020-04-09 14:53:01,293 3519   [           main] INFO  ti.engine.impl.db.DbSqlSession  - performing create on engine with resource org/activiti/db/create/activiti.mysql.create.engine.sql
+2020-04-09 14:53:01,294 3520   [           main] INFO  ti.engine.impl.db.DbSqlSession  - Found MySQL: majorVersion=5 minorVersion=7
+2020-04-09 14:53:03,970 6196   [           main] INFO  ti.engine.impl.db.DbSqlSession  - performing create on history with resource org/activiti/db/create/activiti.mysql.create.history.sql
+2020-04-09 14:53:03,970 6196   [           main] INFO  ti.engine.impl.db.DbSqlSession  - Found MySQL: majorVersion=5 minorVersion=7
+2020-04-09 14:53:04,803 7029   [           main] INFO  ti.engine.impl.db.DbSqlSession  - performing create on identity with resource org/activiti/db/create/activiti.mysql.create.identity.sql
+2020-04-09 14:53:04,803 7029   [           main] INFO  ti.engine.impl.db.DbSqlSession  - Found MySQL: majorVersion=5 minorVersion=7
+2020-04-09 14:53:05,057 7283   [           main] INFO  .engine.impl.ProcessEngineImpl  - ProcessEngine default created
+2020-04-09 14:53:05,061 7287   [           main] INFO  activiti.engine.ProcessEngines  - initialised process engine default
+2020-04-09 14:53:05,098 7324   [           main] INFO  mpl.bpmn.deployer.BpmnDeployer  - Processing resource MainFlow.bpmn
+2020-04-09 14:53:05,413 7639   [           main] INFO  mpl.bpmn.deployer.BpmnDeployer  - Processing resource MainFlow.png
+2020-04-16 10:52:35,303 0      [           main] INFO  activiti.engine.ProcessEngines  - Initializing process engine using configuration 'file:/D:/GraduationProject/PmOA/target/classes/activiti.cfg.xml'
+2020-04-16 10:52:35,305 2      [           main] INFO  activiti.engine.ProcessEngines  - initializing process engine for resource file:/D:/GraduationProject/PmOA/target/classes/activiti.cfg.xml
+2020-04-16 10:52:35,595 292    [           main] INFO  ry.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from InputStream resource [resource loaded through InputStream]
+2020-04-16 10:52:38,711 3408   [           main] INFO  ti.engine.impl.db.DbSqlSession  - performing create on engine with resource org/activiti/db/create/activiti.mysql.create.engine.sql
+2020-04-16 10:52:38,712 3409   [           main] INFO  ti.engine.impl.db.DbSqlSession  - Found MySQL: majorVersion=5 minorVersion=7
+2020-04-16 10:52:41,289 5986   [           main] INFO  ti.engine.impl.db.DbSqlSession  - performing create on history with resource org/activiti/db/create/activiti.mysql.create.history.sql
+2020-04-16 10:52:41,289 5986   [           main] INFO  ti.engine.impl.db.DbSqlSession  - Found MySQL: majorVersion=5 minorVersion=7
+2020-04-16 10:52:41,973 6670   [           main] INFO  ti.engine.impl.db.DbSqlSession  - performing create on identity with resource org/activiti/db/create/activiti.mysql.create.identity.sql
+2020-04-16 10:52:41,973 6670   [           main] INFO  ti.engine.impl.db.DbSqlSession  - Found MySQL: majorVersion=5 minorVersion=7
+2020-04-16 10:52:42,409 7106   [           main] INFO  .engine.impl.ProcessEngineImpl  - ProcessEngine default created
+2020-04-16 10:52:42,414 7111   [           main] INFO  activiti.engine.ProcessEngines  - initialised process engine default
+2020-04-16 10:52:42,457 7154   [           main] INFO  mpl.bpmn.deployer.BpmnDeployer  - Processing resource MainFlow.bpmn
+2020-04-16 10:52:42,723 7420   [           main] INFO  mpl.bpmn.deployer.BpmnDeployer  - Processing resource MainFlow.png
+2020-04-17 20:06:49,051 0      [           main] INFO  activiti.engine.ProcessEngines  - Initializing process engine using configuration 'file:/D:/GraduationProject/PmOA/target/classes/activiti.cfg.xml'
+2020-04-17 20:06:49,055 4      [           main] INFO  activiti.engine.ProcessEngines  - initializing process engine for resource file:/D:/GraduationProject/PmOA/target/classes/activiti.cfg.xml
+2020-04-17 20:06:49,742 691    [           main] INFO  ry.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from InputStream resource [resource loaded through InputStream]
+2020-04-17 20:06:55,947 6896   [           main] INFO  ti.engine.impl.db.DbSqlSession  - performing create on engine with resource org/activiti/db/create/activiti.mysql.create.engine.sql
+2020-04-17 20:06:55,948 6897   [           main] INFO  ti.engine.impl.db.DbSqlSession  - Found MySQL: majorVersion=5 minorVersion=7
+2020-04-17 20:06:58,881 9830   [           main] INFO  ti.engine.impl.db.DbSqlSession  - performing create on history with resource org/activiti/db/create/activiti.mysql.create.history.sql
+2020-04-17 20:06:58,881 9830   [           main] INFO  ti.engine.impl.db.DbSqlSession  - Found MySQL: majorVersion=5 minorVersion=7
+2020-04-17 20:06:59,821 10770  [           main] INFO  ti.engine.impl.db.DbSqlSession  - performing create on identity with resource org/activiti/db/create/activiti.mysql.create.identity.sql
+2020-04-17 20:06:59,822 10771  [           main] INFO  ti.engine.impl.db.DbSqlSession  - Found MySQL: majorVersion=5 minorVersion=7
+2020-04-17 20:07:00,142 11091  [           main] INFO  .engine.impl.ProcessEngineImpl  - ProcessEngine default created
+2020-04-17 20:07:00,148 11097  [           main] INFO  activiti.engine.ProcessEngines  - initialised process engine default
+2020-04-17 20:07:00,196 11145  [           main] INFO  mpl.bpmn.deployer.BpmnDeployer  - Processing resource MainFlow.bpmn
+2020-04-17 20:07:00,617 11566  [           main] INFO  mpl.bpmn.deployer.BpmnDeployer  - Processing resource MainFlow.png
+2020-05-08 09:12:39,228 1      [           main] INFO  activiti.engine.ProcessEngines  - Initializing process engine using configuration 'file:/D:/GraduationProject/PmOA/target/classes/activiti.cfg.xml'
+2020-05-08 09:12:39,237 10     [           main] INFO  activiti.engine.ProcessEngines  - initializing process engine for resource file:/D:/GraduationProject/PmOA/target/classes/activiti.cfg.xml
+2020-05-08 09:12:39,697 470    [           main] INFO  ry.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from InputStream resource [resource loaded through InputStream]
+2020-05-08 09:12:46,020 6793   [           main] INFO  ti.engine.impl.db.DbSqlSession  - performing create on engine with resource org/activiti/db/create/activiti.mysql.create.engine.sql
+2020-05-08 09:12:46,020 6793   [           main] INFO  ti.engine.impl.db.DbSqlSession  - Found MySQL: majorVersion=5 minorVersion=7
+2020-05-08 09:12:48,837 9610   [           main] INFO  ti.engine.impl.db.DbSqlSession  - performing create on history with resource org/activiti/db/create/activiti.mysql.create.history.sql
+2020-05-08 09:12:48,838 9611   [           main] INFO  ti.engine.impl.db.DbSqlSession  - Found MySQL: majorVersion=5 minorVersion=7
+2020-05-08 09:12:49,887 10660  [           main] INFO  ti.engine.impl.db.DbSqlSession  - performing create on identity with resource org/activiti/db/create/activiti.mysql.create.identity.sql
+2020-05-08 09:12:49,887 10660  [           main] INFO  ti.engine.impl.db.DbSqlSession  - Found MySQL: majorVersion=5 minorVersion=7
+2020-05-08 09:12:50,255 11028  [           main] INFO  .engine.impl.ProcessEngineImpl  - ProcessEngine default created
+2020-05-08 09:12:50,266 11039  [           main] INFO  activiti.engine.ProcessEngines  - initialised process engine default
+2020-05-08 09:12:50,326 11099  [           main] INFO  mpl.bpmn.deployer.BpmnDeployer  - Processing resource MainFlow.bpmn
+2020-05-08 09:12:50,797 11570  [           main] INFO  mpl.bpmn.deployer.BpmnDeployer  - Processing resource MainFlow.png
+2020-05-08 09:52:18,931 0      [           main] INFO  activiti.engine.ProcessEngines  - Initializing process engine using configuration 'file:/D:/GraduationProject/PmOA/target/classes/activiti.cfg.xml'
+2020-05-08 09:52:18,936 5      [           main] INFO  activiti.engine.ProcessEngines  - initializing process engine for resource file:/D:/GraduationProject/PmOA/target/classes/activiti.cfg.xml
+2020-05-08 09:52:19,201 270    [           main] INFO  ry.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from InputStream resource [resource loaded through InputStream]
+2020-05-08 09:52:23,557 4626   [           main] INFO  ti.engine.impl.db.DbSqlSession  - performing create on engine with resource org/activiti/db/create/activiti.mysql.create.engine.sql
+2020-05-08 09:52:23,557 4626   [           main] INFO  ti.engine.impl.db.DbSqlSession  - Found MySQL: majorVersion=5 minorVersion=7
+2020-05-08 09:52:26,399 7468   [           main] INFO  ti.engine.impl.db.DbSqlSession  - performing create on history with resource org/activiti/db/create/activiti.mysql.create.history.sql
+2020-05-08 09:52:26,399 7468   [           main] INFO  ti.engine.impl.db.DbSqlSession  - Found MySQL: majorVersion=5 minorVersion=7
+2020-05-08 09:52:27,163 8232   [           main] INFO  ti.engine.impl.db.DbSqlSession  - performing create on identity with resource org/activiti/db/create/activiti.mysql.create.identity.sql
+2020-05-08 09:52:27,164 8233   [           main] INFO  ti.engine.impl.db.DbSqlSession  - Found MySQL: majorVersion=5 minorVersion=7
+2020-05-08 09:52:27,440 8509   [           main] INFO  .engine.impl.ProcessEngineImpl  - ProcessEngine default created
+2020-05-08 09:52:27,446 8515   [           main] INFO  activiti.engine.ProcessEngines  - initialised process engine default
+2020-05-08 09:52:27,492 8561   [           main] INFO  mpl.bpmn.deployer.BpmnDeployer  - Processing resource MainFlow.bpmn
+2020-05-08 09:52:27,787 8856   [           main] INFO  mpl.bpmn.deployer.BpmnDeployer  - Processing resource MainFlow.png

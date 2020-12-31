@@ -1,0 +1,40 @@
+-------------------------------------------------------------------------------
+Test set: com.test.mybatis.TestPolicyMybatis
+-------------------------------------------------------------------------------
+Tests run: 5, Failures: 0, Errors: 3, Skipped: 0, Time elapsed: 0.309 s <<< FAILURE! - in com.test.mybatis.TestPolicyMybatis
+test1(com.test.mybatis.TestPolicyMybatis)  Time elapsed: 0.062 s  <<< ERROR!
+org.apache.ibatis.exceptions.PersistenceException: 
+
+### Error updating database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry '76543' for key 'PRIMARY'
+### The error may involve com.policymanage.dao.PolicyDao.insertID-Inline
+### The error occurred while setting parameters
+### SQL: insert into policy(p_id) values(?)
+### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry '76543' for key 'PRIMARY'
+	at com.test.mybatis.TestPolicyMybatis.test1(TestPolicyMybatis.java:50)
+Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry '76543' for key 'PRIMARY'
+	at com.test.mybatis.TestPolicyMybatis.test1(TestPolicyMybatis.java:50)
+
+test3(com.test.mybatis.TestPolicyMybatis)  Time elapsed: 0.048 s  <<< ERROR!
+org.apache.ibatis.exceptions.PersistenceException: 
+
+### Error updating database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry '1' for key 'PRIMARY'
+### The error may involve com.policymanage.dao.PolicyDao.insertID-Inline
+### The error occurred while setting parameters
+### SQL: insert into policy(p_id) values(?)
+### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry '1' for key 'PRIMARY'
+	at com.test.mybatis.TestPolicyMybatis.test3(TestPolicyMybatis.java:66)
+Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry '1' for key 'PRIMARY'
+	at com.test.mybatis.TestPolicyMybatis.test3(TestPolicyMybatis.java:66)
+
+test4(com.test.mybatis.TestPolicyMybatis)  Time elapsed: 0.064 s  <<< ERROR!
+org.apache.ibatis.exceptions.PersistenceException: 
+
+### Error updating database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry '35994455' for key 'PRIMARY'
+### The error may involve com.policymanage.dao.PolicyDao.insertPolicy-Inline
+### The error occurred while setting parameters
+### SQL: insert into policy(p_id, p_enterprise, p_address, p_postcode, p_bank, p_account, p_type, p_area, p_starttime, p_principal, p_man, p_phone, p_gotmoney, p_applytime, p_policy, p_contain, p_money, p_path) values(?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry '35994455' for key 'PRIMARY'
+	at com.test.mybatis.TestPolicyMybatis.test4(TestPolicyMybatis.java:79)
+Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry '35994455' for key 'PRIMARY'
+	at com.test.mybatis.TestPolicyMybatis.test4(TestPolicyMybatis.java:79)
+

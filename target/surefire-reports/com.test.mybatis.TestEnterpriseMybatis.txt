@@ -1,0 +1,28 @@
+-------------------------------------------------------------------------------
+Test set: com.test.mybatis.TestEnterpriseMybatis
+-------------------------------------------------------------------------------
+Tests run: 8, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 0.617 s <<< FAILURE! - in com.test.mybatis.TestEnterpriseMybatis
+testAdd(com.test.mybatis.TestEnterpriseMybatis)  Time elapsed: 0.097 s  <<< ERROR!
+org.apache.ibatis.exceptions.PersistenceException: 
+
+### Error updating database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Column 'e_id' cannot be null
+### The error may involve com.policymanage.dao.EnterpriseDao.insertEnterprise-Inline
+### The error occurred while setting parameters
+### SQL: insert into enterprise(e_id, e_name, e_regaddress, e_legalman, e_principal, e_phone, e_email, e_fund, e_type, e_signtime, e_scope, e_rank, e_conaddress, e_postcode, e_account, e_intime, username) values(?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Column 'e_id' cannot be null
+	at com.test.mybatis.TestEnterpriseMybatis.testAdd(TestEnterpriseMybatis.java:78)
+Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Column 'e_id' cannot be null
+	at com.test.mybatis.TestEnterpriseMybatis.testAdd(TestEnterpriseMybatis.java:78)
+
+testInsert(com.test.mybatis.TestEnterpriseMybatis)  Time elapsed: 0.063 s  <<< ERROR!
+org.apache.ibatis.exceptions.PersistenceException: 
+
+### Error updating database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry '2' for key 'PRIMARY'
+### The error may involve com.policymanage.dao.EnterpriseDao.insertEnterprise-Inline
+### The error occurred while setting parameters
+### SQL: insert into enterprise(e_id, e_name, e_regaddress, e_legalman, e_principal, e_phone, e_email, e_fund, e_type, e_signtime, e_scope, e_rank, e_conaddress, e_postcode, e_account, e_intime, username) values(?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry '2' for key 'PRIMARY'
+	at com.test.mybatis.TestEnterpriseMybatis.testInsert(TestEnterpriseMybatis.java:63)
+Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry '2' for key 'PRIMARY'
+	at com.test.mybatis.TestEnterpriseMybatis.testInsert(TestEnterpriseMybatis.java:63)
+

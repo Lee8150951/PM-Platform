@@ -1,0 +1,16 @@
+-------------------------------------------------------------------------------
+Test set: com.test.mybatis.TestCheckMybatis
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.239 s <<< FAILURE! - in com.test.mybatis.TestCheckMybatis
+test1(com.test.mybatis.TestCheckMybatis)  Time elapsed: 0.072 s  <<< ERROR!
+org.apache.ibatis.exceptions.PersistenceException: 
+
+### Error updating database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry '76543' for key 'PRIMARY'
+### The error may involve com.policymanage.dao.CheckDao.insertCheck-Inline
+### The error occurred while setting parameters
+### SQL: insert into `check`(c_id, c_time, c_result, c_remark) values(?, ?, ?, ?)
+### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry '76543' for key 'PRIMARY'
+	at com.test.mybatis.TestCheckMybatis.test1(TestCheckMybatis.java:56)
+Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry '76543' for key 'PRIMARY'
+	at com.test.mybatis.TestCheckMybatis.test1(TestCheckMybatis.java:56)
+

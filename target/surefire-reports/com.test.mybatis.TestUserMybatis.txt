@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: com.test.mybatis.TestUserMybatis
+-------------------------------------------------------------------------------
+Tests run: 9, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.748 s <<< FAILURE! - in com.test.mybatis.TestUserMybatis
+test4(com.test.mybatis.TestUserMybatis)  Time elapsed: 0.056 s  <<< ERROR!
+java.lang.ClassCastException: com.policymanage.entity.User cannot be cast to java.base/java.lang.String
+	at com.test.mybatis.TestUserMybatis.test4(TestUserMybatis.java:69)
+
